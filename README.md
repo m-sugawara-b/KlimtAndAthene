@@ -1,4 +1,4 @@
 # portfolio1
 ゲームの企画です。
 
-<img src="state1.png.jpg" alt="aaa" title="サンプル">
+<img src="https://github.com/m-sugawara-b/portfolio1/blob/master/state1.png" alt="aaa" title="サンプル">
