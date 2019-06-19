@@ -140,7 +140,7 @@
 
 <a name="scenarioSample"></a>
 ### 4.1.シナリオ例『TheAmberEyes』
-例として、シナリオをひとつ用意した。『<a href="./2.Scenario.TheAmberEyes.docx">2.Scenario.TheAmberEyes.docx</a>』を参照すること。
+例として、シナリオをひとつ用意した。『<a href="./ScenarioTheAmberEyes.pdf">ScenarioTheAmberEyes.pdf</a>』を参照すること。
 
 <a name="requirementDiagram"></a>
 ### 4.2.『TheAmberEyes』要求図
