@@ -21,7 +21,7 @@
 が記述されています。
 
 <br>
-<img src="https://www.musey.net/wp-content/uploads/2016/10/klimt_athene00.jpg">
+<img src="https://www.musey.net/wp-content/uploads/2016/10/klimt_athene00.jpg" width="580">
 <div align="center">
 画像参照先:<a href="https://www.musey.net/4455">MUSEY パラス・アテナ</a>
 </div>
