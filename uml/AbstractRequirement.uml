@@ -1,0 +1,44 @@
+@startuml
+
+/'各ステレオタイプの色分けの定義'/
+skinparam object {
+BackgroundColor<<gameDesign>> LightGreen
+BackgroundColor<<character>> LightSalmon
+BackgroundColor<<scenarioElement>> Ivory
+BackgroundColor<<requirement>> LightCyan
+BackgroundColor<<place>>  LightPink
+BackgroundColor<<hint>> Bisque
+}
+
+object "要求" as Req
+
+object "地に足のついたゲームであること" as Req0 <<requirement>>
+object "頑としてそこにある日常を作り込むこと" as Req1 <<requirement>>
+Req1 : text = 世界は簡単に滅亡なんかしない。世界は頑としてそこにあるのである。
+object "イサカという架空の世界を作り、その中で起こる日常的なドラマを描くこと" as Req2 <<scenarioElement>>
+object "無理をして、壮大な物語にしようとしないこと。" as Req3 <<requirement>>
+object "クエストを通して、クリムトの成長を描くこと" as Req4 <<requirement>>
+object "クリムトの成長を通して、プレイヤーに静かな感動を与えること" as Req9 <<requirement>>
+object "デザイン参考：ウィーン分離派" as Req5 <<requirement>>
+object "連続ドラマ形式" as Req6 <<requirement>>
+object "RPGであること" as Req7 <<requirement>>
+object "クエストが発生すること" as Req8 <<requirement>>
+object "『人間喜劇』W.サローヤン" as Hint1 <<hint>>
+
+
+Req0 +.. Req1
+Req1 <.. Req2 : <<satisfy>>
+Req3 <.. Req2 : <<satisfy>>
+Req +.. Req4
+Req4 <.. Req9 : <<assoc>>
+Req +.. Req5
+Req +.. Req6
+Req +.. Req7
+Req7 +.. Req8
+Req8 <.. Req4 : <<assoc>>
+Req7 <.. Req3 : <<assoc>>
+Req7 <.. Req0 : <<assoc>>
+Req1 <.. Hint1 : <<assoc>>
+Hint1 <.. Req2 : <<assoc>>
+
+@enduml
